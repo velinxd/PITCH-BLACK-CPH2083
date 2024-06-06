@@ -4,11 +4,11 @@ jobs:
     docker:
       - image: fr3akyphantom/droid-builder:latest
     environment:
-      MANIFEST_BRANCH: 'android-9.0'
+      MANIFEST_BRANCH: 'CPH2083'
       VERSION: '3.0.0'
       MAINTAINER: '@SIDDK'
-      VENDOR: 'realme'
-      CODENAME: 'RMX1941'
+      VENDOR: 'oppo'
+      CODENAME: 'CPH2083'
       FLAVOR: 'eng'
       #TEST_BUILD: 'true'
       PB_OFFICIAL: 'true'
@@ -28,5 +28,5 @@ workflows:
       - build:
           filters:
             branches:
-              only: 'android-9.0'
+              only: 'CPH2083'
           context: org-global
