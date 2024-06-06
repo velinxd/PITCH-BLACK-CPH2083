@@ -15,33 +15,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Specify phone tech before including full_phone
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
+
+# Inherit from our custom product configuration
 $(call inherit-product, vendor/pb/config/common.mk)
 
-# Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := OP4BFB
-PRODUCT_NAME := omni_CPH2083
+# Device identifier.
 PRODUCT_BRAND := OPPO
-PRODUCT_MODEL := CPH2083
+PRODUCT_DEVICE := OP4BFB
 PRODUCT_MANUFACTURER := OPPO
+PRODUCT_MODEL := CPH2083
+PRODUCT_NAME := omni_CPH2083
 PRODUCT_RELEASE_NAME := CPH2083
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=RMX1941 \
-    BUILD_PRODUCT=RMX1941 \
-    TARGET_DEVICE=RMX1941
-
-# HACK: Set vendor patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.security_patch=2099-12-31
-
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.bootimage.build.date.utc \
-    ro.build.date.utc
+    PRODUCT_NAME=CPH2083 \
+    BUILD_PRODUCT=CPH2083 \
+    TARGET_DEVICE=OP4BFB
 
 # Dimen
 TARGET_SCREEN_HEIGHT := 1560
