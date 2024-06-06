@@ -23,12 +23,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := RMX1941
-PRODUCT_NAME := omni_RMX1941
-PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme C2
-PRODUCT_MANUFACTURER := realme
-PRODUCT_RELEASE_NAME := Realme C2
+PRODUCT_DEVICE := OP4BFB
+PRODUCT_NAME := omni_CPH2083
+PRODUCT_BRAND := OPPO
+PRODUCT_MODEL := CPH2083
+PRODUCT_MANUFACTURER := OPPO
+PRODUCT_RELEASE_NAME := CPH2083
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=RMX1941 \
