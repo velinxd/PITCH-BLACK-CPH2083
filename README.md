@@ -40,4 +40,4 @@ To initialize your local repository using the OMNIROM trees to build TWRP, use a
 
 Build the TWRP recovery using below command.
 
-    cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_RMX1941-eng; mka recoveryimage
+    cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_CPH2083-eng; mka recoveryimage
