@@ -6,7 +6,7 @@ jobs:
     environment:
       MANIFEST_BRANCH: 'CPH2083'
       VERSION: '3.0.0'
-      MAINTAINER: '@SIDDK'
+      MAINTAINER: '@VIOLET-EVERGARDE'
       VENDOR: 'oppo'
       CODENAME: 'CPH2083'
       FLAVOR: 'eng'
